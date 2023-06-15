@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+    --clr-border-active: linear-gradient(to left, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    --clr-input-error: hsl(0, 100%, 66%);
+
+    --clr-gray-1: hsl(270, 3%, 87%);
+    --clr-gray-2: hsl(279, 6%, 55%);
+    --clr-violet: hsl(278, 68%, 11%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+p {
+    font-size: 1.125rem;
+}
+a {
+    text-decoration: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.form-control span {
+    display: none;
+}
+.err span {
+    display: block;
+    margin-top: 5px;
+    color: var(--clr-input-error);
+    font-size: 0.7rem;
+}
+.err input {
+    border-color: var(--clr-input-error) !important;
+}
+.btn {
+    width: 100%;
+    background-color: var(--clr-violet);
+    color: var(--clr-gray-1);
+    border-radius: 8px;
+    padding: 0.825rem;
+    border: none;
+    cursor: pointer;
+}
+
+.form {
+    width: 35%;
+}
+@media screen and (max-width: 1140px) {
+    .form {
+        width: 50%;
+        /* padding-top: 8rem; */
+    }
+}
+@media screen and (max-width: 800px) {
+    .form {
+        width: 90%;
+        margin-top: 6rem;
+    }
+}
